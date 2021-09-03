@@ -1,1 +1,6 @@
 
+.container{
+    background-image: url(./images/background.jpg);
+    height: 735px;
+    width: 980px;
+}
