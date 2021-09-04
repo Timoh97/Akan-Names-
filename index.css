@@ -10,7 +10,7 @@ background-color: rgb(82, 35, 126);
 }
 
 #intro1,#intro2,#intro3 {
-background-color: #FEF9E7 ;
+background-color: #fdfde2 ;
 border: 2px solid #D0ECE7;
 position: relative;
 left: 0px;
@@ -36,6 +36,10 @@ h3>span {
     position: relative;
     top: -290px;
     right: -600px;
+}
+
+#submitButton {
+    background-color: rgb(82, 35, 126);
 }
 
 .results {
