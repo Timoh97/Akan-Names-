@@ -1,6 +1,41 @@
 
-.container{
+.container {
     background-image: url(./images/background.jpg);
     height: 735px;
     width: 980px;
+}
+
+#intro1,#intro2,#intro3 {
+background-color: #FEF9E7 ;
+border: 2px solid #D0ECE7;
+position: relative;
+left: 0px;
+top: 10px;
+width: 530px;
+padding-left: 10px;
+border-radius: 10px;
+margin-bottom: 10px;
+}
+
+h2,h3 {
+color: #eb366cec;
+font-family: serif;
+font-style: normal;
+position: relative;
+}
+
+h3>span {
+    color: rgb(11, 63, 80);
+}
+
+.valid-form {
+    position: relative;
+    top: -290px;
+    right: -600px;
+}
+
+.social-info {
+    position: relative;
+    margin-top: 150px;
+    text-align: center;
 }

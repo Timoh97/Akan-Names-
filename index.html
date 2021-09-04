@@ -9,21 +9,60 @@
     <link rel="stylesheet" href="index.css" type="text/css">
 </head>
 <body>
-    <div class="container">
-        <div class="row-sm-4">
+    <header>
+        <nav>
+            list list
+        </nav>
+    </header>
+    <h2 class="text-center">AKAN NAMES</h2>
+    <div class="container border border-primary">
+        <div class="row-sm-4 text-wrap-sm-4" id="intro1">
            <p>Most people do know when their birthdays are,<br>
-            but some might not know what day of the week they were born.</p> 
+           but some might not know what day of the week they were born.</p> 
         </div>
-        <div class="row-sm-4">
+        <div class="row-sm-4 text-break" id="intro2">
             <p>Luckily for us,<br>
              there are ways to calculate the day of the week from a specific date. </p> 
         </div>
-        <div class="row-sm-4">
+        <div class="row-sm-4 text-break text-wrap-sm-4" id="intro3">
             Let's make it fun! Enter your date of birth and we shall give you Akan name. <br>
-            Akan names are derived from Ghanian culture. <br> Frequently in Ghana, children are given their first name as a 'day name'<br>
+            Akan names are derived from Ghanaian culture. <br> Frequently in Ghana, children are given their first name as a 'day name'<br>
              which corresponds to the day in the week they were born.
         </div>
-       
+        <form class="valid-form" id="form" method="POST">
+            <fieldset>
+              <legend>Awesome, let's do it. <br>
+                 Input your DOB to get started:
+                </legend>
+              Date:<input class="row" type="number" id="date">
+              Month:<input class="row" type="number" id="month">
+              Year:<input class="row" type="number" id="year">
+              <select id="gender">
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+              </select>
+            </fieldset>
+            <br>
+            <input type="submit" value="Submit" id="submitButton" class="btn btn-primary" onclick="generateName(); return false"/>
+          </form>
+          <div class="results" >
+        <h2 class="text-center mt-1" id="result">RESULTS</h2>
+        <p class="akan-salutation text-center mt-3">Wow! You were born on:</p>
+        <p class="akan-salutation text-center mt-3">Your Akan name is:</p>
+        </div>
+        <div class="social-info">
+            <h3><span>Tim</span> software <span>developers</span></h3>
+      <p>Let's develop a software for you. <br>
+          || timohmugendi@gmail.com</p>
+      social media@TiM M-Appdevs <br>
+      <img src="./images/facebook.svg" alt="Facebook" width="30px">
+      <img src="./images/instagram.svg" alt="Instagram" width="30px">
+      <img src="./images/twitter.svg" alt="Twitter" width="30px">
+       </div>
+    
     </div>
+    <footer>
+      
+    </footer>
 </body>
 </html>
