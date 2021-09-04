@@ -5,6 +5,10 @@
     width: 980px;
 }
 
+.navbar{
+background-color: #eb366cec;
+}
+
 #intro1,#intro2,#intro3 {
 background-color: #FEF9E7 ;
 border: 2px solid #D0ECE7;
@@ -36,7 +40,7 @@ h3>span {
 
 .results {
     position: relative;
-    top: -300px;
+    top: -400px;
     left: -30px;
 }
 
@@ -45,6 +49,18 @@ h3>span {
     margin-top: 130px;
     text-align: center;
     position: relative;
-    top: -300px;
+    top: -410px;
     left: -30px;
+}
+
+footer {
+    background-color: #eb366cec;
+    height: 50px;
+    width: 1340px;
+}
+
+marquee {
+color: whitesmoke;
+font-size: xx-large;
+padding-top: 5px;
 }
