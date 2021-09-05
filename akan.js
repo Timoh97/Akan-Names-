@@ -48,23 +48,23 @@ function generateName(){
     var year=parseInt(year);
     var century=parseInt(century);
     
-     if (month === "January" || month === "October") {
+     if ( month === "January" || month === "October") {
        monthCode = 0;
        }
-          else if (month=== "February" || month === "March" || month === "November")
+          else if ( month=== "February" || month === "March" || month === "November")
       {
        monthCode = 3;
           }
-          else if (month=== "April" || month === "July"){
+          else if ( month=== "April" || month === "July"){
        monthCode = 6;
           }
-          else if (month=== "September" || month === "December") {
+          else if ( month=== "September" || month === "December") {
        monthCode = 5;
           }
-          else if (month==="May") {
+          else if ( month==="May") {
        monthCode = 1;
           }
-          else if (month==="August") {
+          else if ( month==="August") {
        monthCode =2;
           }
           else if (month=== "June"){
