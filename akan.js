@@ -38,6 +38,9 @@ function generateName (){
     var genders = document.getElementById("gender");
     var gender = genders.options[genders.selectedIndex].text;
 
-    Var maleName = [""]
+    Var maleName = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
+    var femaleName = ["Akosua","Adwoa"," Abenaa","Akua","Yaa","Afua","Ama"];
+    var dayOfWeek = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 }
+
 
