@@ -20,7 +20,7 @@ git commit -m "commit message"
 git push origin mmaster
 This moves work from local repository to remote.
 ## live link
-
+https://timoh97.github.io/Akan-Names-/
 ## License
 MIT:*
 Copy right (c) 2021
