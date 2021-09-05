@@ -19,6 +19,8 @@ using terminal,git add remote url
 git commit -m "commit message"
 git push origin mmaster
 This moves work from local repository to remote.
+## Figma Design
+https://www.figma.com/file/6pSUbJ7oawYbTjbLP4Uq5A/photography-website?node-id=0%3A1
 ## live link
 https://timoh97.github.io/Akan-Names-/
 ## License
