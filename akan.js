@@ -19,12 +19,11 @@
 //     var dayOfBirth = ( ( (century/4) -2*year-1) + ((5*year/4) ) + ((26*(month+1)/10)) + date ) % 7;
 //     var dayOfBirth = Math.floor(dayOfBirth);
   
-//     if (gender === "Male") {
-//          document.getElementById("result").innerHTML = "Wow! You were born on " + dayOfWeek[dayOfBirth - 1]+ " and your name is " +  maleName[dayOfBirth -1];
-//          }
-//          else if (gender === "Female") {
-//              document.getElementById("result").innerHTML = "You were born on " + dayOfWeek[dayOfBirth - 1]+ " and your name is " +  femaleName[dayOfBirth -1];
-//          }
+//      if (gender === "Male") {
+//           document.getElementById("result").innerHTML = "Wow! You were born on " + dayOfWeek[dayOfBirth - 1]+ " and your name is " +  maleName[dayOfBirth -1];
+//           }
+//           else if (gender === "Female") {
+//               document.getElementById("result").innerHTML = "You were born on " + dayOfWeek[dayOfBirth - 1]+ " and your name is " +  femaleName[dayOfBirth -1];          }
       
 //   }
 
@@ -67,7 +66,20 @@
      
      var year = yearOfBirth.slice(2,4);
      var century = yearOfBirth.slice(0,2);
+     var centuryCodes = [0,2,4,6]
 
+     if (century===20,16){
+         centuryCode = centuryCodes[3]
+     }
+     else if (century===19){
+        centuryCode = centuryCodes[0]
+     }
+     else if (century===18){
+        centuryCode = centuryCodes[1]
+     }
+     else {
+        centuryCode = centuryCodes[2]
+     }
      var genders = document.getElementById("gender");
      var gender = genders.options[genders.selectedIndex].text;
 
@@ -75,7 +87,14 @@
      var femaleName = ["Akosua","Adwoa"," Abenaa","Akua","Yaa","Afua","Ama"];
      var dayOfWeek = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 
-     var monthCode = (date + monthCode + year +year/4 +centuryCode)%7
+     var remainder = ((date + monthCode + year +year/4 + centuryCode)%7)
+
+     if (remainder >= 1 && gender === "Male") {
+        document.getElementById("result").innerHTML = "Wow! You were born on " + dayOfWeek[dayOfBirth - 1]+ " and your name is " +  maleName[dayOfBirth -1];
+        }
+        else if (remainder >= 1 && gender === "Female") {
+            document.getElementById("result").innerHTML = "You were born on " + dayOfWeek[dayOfBirth - 1]+ " and your name is " +  femaleName[dayOfBirth -1];          }
+    
  }
 
 
