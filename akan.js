@@ -40,40 +40,31 @@
      var month = document.getElementById("month").value;
      var yearOfBirth = document.getElementById("Year").value;
 
-     if (month === January, October,) {
-         mothCode=0
+     var monthCodes1 = [0,1,2,3,4,5,6];
+
+     if (month === January, October) {
+        monthCode = monthCodes1[0];
         }
      else if (month=== February, March, November){
-         monthCode=3
+        monthCode = monthCodes1[3];
      }
      else if (month===April,July){
-         month=6
+        monthCode = monthCodes1[6];
      }
      else if (month===September,December) {
-         month=5
+        monthCode = monthCodes1[5];
      }
      else if (month===May) {
-         month=1
+        monthCode = monthCodes1[1];
      }
-     else {
-         month=1
+     else if (month===August) {
+        monthCode = monthCodes1[2];
+     }
+     else{
+        monthCode = monthCodes1[4];
      }
      
-         January:0
-         February: 3
-         March:3
-         May: 1
-         June: 4
-         April: 6
-         July: 6
-         August: 2
-         September: 5
-         October: 0
-         Nov: 3
-         Dec: 5
      
-     monthCode = [0,1,2,3,4,5,6]
-
      var year = yearOfBirth.slice(2,4);
      var century = yearOfBirth.slice(0,2);
 
