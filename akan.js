@@ -20,6 +20,9 @@ alert("YOU ENTERED AN INVALID DATE Or YEAR");
 } else if (!months.includes(month)){
 alert ("wrong month");
 }
+else if (yearOfBirth.length!=4){
+   alert("YOU ENTERED AN INVALID YEAR");
+}
 else {
 
 
