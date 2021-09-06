@@ -3,6 +3,9 @@ function generateName(){
    var month = document.getElementById("month").value;
    var yearOfBirth = document.getElementById("year").value;
    
+   var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+   
    var year = yearOfBirth.slice(2,4);
    var century = yearOfBirth.slice(0,2);
    
@@ -11,6 +14,15 @@ function generateName(){
    
    var year=parseInt(year);
    var century=parseInt(century);
+   
+   if (isNaN(date) || date <= 0 || date > 31 || isNaN(yearOfBirth)){
+alert("YOU ENTERED AN INVALID DATE Or YEAR");
+} else if (!months.includes(month)){
+alert ("wrong month");
+}
+else {
+
+
    
     if (month === "January" || month === "October") {
       monthCode = 0;
@@ -34,38 +46,39 @@ function generateName(){
          else if (month=== "June"){
       monthCode = 4;
          }
-   
-   if (century===20 || century=== 16){
+       
+       if (century===20 || century=== 16){
        centuryCode =6;
-   }
-   else if (century===19) { 
+       }
+       else if (century===19) { 
       centuryCode = 0;
-   }
-   
-   else if (century===18) {
+       }
+       
+       else if (century===18) {
       centuryCode = 2;
-   }
-   
-   else if ( century===17) {
+       }
+       
+       else if ( century===17) {
       centuryCode = 4;
+       }
+       
+       var genders = document.getElementById("gender");
+       var gender = genders.options[genders.selectedIndex].text;
+       
+       var maleName = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
+       var femaleName = ["Akosua","Adwoa"," Abenaa","Akua","Yaa","Afua","Ama"];
+       var dayOfWeek = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
    }
    
-   var genders = document.getElementById("gender");
-   var gender = genders.options[genders.selectedIndex].text;
-   
-   var maleName = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
-   var femaleName = ["Akosua","Adwoa"," Abenaa","Akua","Yaa","Afua","Ama"];
-   var dayOfWeek = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]; 
-   
-   
-    var remainder = ((date + monthCode + year + Math.floor (year/4 ) + centuryCode)%7); 
+      var remainder = ((date + monthCode + year + Math.floor (year/4 ) + centuryCode)%7);
+     
    
        if ( gender == "Male") {
       document.getElementById("result").innerHTML = "Wow! You were born on " + dayOfWeek[remainder]+ " and your name is " +  maleName[remainder];
       }
    else if (gender == "Female") {
-          document.getElementById("result").innerHTML = "You were born on " + dayOfWeek[remainder]+ " and your name is " +  femaleName[remainder];          }
+          document.getElementById("result").innerHTML = "You were born on " + dayOfWeek[remainder]+ " and your name is " +  femaleName[remainder];   
+      }
      
     }
-    
      
