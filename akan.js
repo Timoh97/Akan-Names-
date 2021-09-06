@@ -22,8 +22,6 @@ alert ("wrong month");
 }
 else {
 
-
-   
     if (month === "January" || month === "October") {
       monthCode = 0;
       }
