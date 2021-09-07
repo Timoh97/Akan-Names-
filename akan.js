@@ -20,7 +20,7 @@ alert("YOU ENTERED AN INVALID DATE Or YEAR");
 } else if (!months.includes(month)){
 alert ("wrong month");
 }
- {
+   else {
 
     if (month === "January" || month === "October") {
       monthCode = 0;
