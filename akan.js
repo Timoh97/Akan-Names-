@@ -20,6 +20,9 @@ alert("YOU ENTERED AN INVALID DATE Or YEAR");
 } else if (!months.includes(month)){
 alert ("wrong month");
 }
+  else if (yearOfBirth<1600 || yearOfBirth>2099){
+   alert ("Enter a year in range of 1600-2099")
+  }
    else {
 
     if (month === "January" || month === "October") {
